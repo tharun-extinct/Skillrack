@@ -8,7 +8,7 @@ fgets(s,1001,stdin);
 int index=0;
 while(s[index]!='\0' && s[index]!='\r'&& s[index]!='\n')
 {
-  if((s[index]>='a'&& s[index]<='z') || (s[index]>='A'&& s[index]<='Z'))
+  if(isalpha(s[index])
   {
       printf("%c",s[index]);
   }
